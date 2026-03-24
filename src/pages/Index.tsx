@@ -390,6 +390,7 @@ const Index = () => {
         objectionText="Nossa equipe é treinada exatamente para isso. Você não precisa explicar nada por escrito antes — é só marcar, vir e conversar pessoalmente em ambiente totalmente reservado."
         tags={[]}
         ctaText="Quero Saber Mais (100% Sigiloso)"
+        waMessage="Olá! Vim pelo site e tenho interesse no serviço de Fisioterapia Pélvica. Gostaria de mais informações."
         imgSrc={pelvicaImg}
       />
 
