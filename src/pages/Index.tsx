@@ -148,6 +148,7 @@ interface ServiceProps {
   objectionText: string;
   tags: string[];
   ctaText: string;
+  waMessage: string;
   imgSrc?: string;
   imgPlaceholder?: string;
   reversed?: boolean;
