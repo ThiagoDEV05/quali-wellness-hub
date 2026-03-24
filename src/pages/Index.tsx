@@ -1,4 +1,5 @@
 import { useState } from "react";
+import equipeImg from "@/assets/equipe-qualisports.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useCountUp } from "@/hooks/useCountUp";
 import { GoldCTA, FloatingWhatsApp } from "@/components/WhatsApp";
@@ -45,7 +46,7 @@ const Hero = () => (
 
       {/* Image */}
       <div className="flex-shrink-0 w-full md:w-[42%] order-1 md:order-2">
-        <img src="https://placehold.co/540x460/155c3f/c8923a?text=Equipe+QualiSports" alt="Equipe QualiSports"
+        <img src={equipeImg} alt="Equipe QualiSports"
           className="w-full rounded-[20px] object-cover" loading="lazy" />
         <div className="flex gap-2 flex-wrap justify-center mt-3">
           {["Fisioterapia", "Recovery", "Fisio Pélvica", "Pilates"].map(t => (
