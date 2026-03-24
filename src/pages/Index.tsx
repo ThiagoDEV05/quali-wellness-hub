@@ -82,17 +82,13 @@ const Strip = () => (
 /* ─── ABOUT ─── */
 const About = () => (
   <section className="py-16 md:py-24 px-4" style={{ background: "var(--qs-darkest)" }}>
-    <div className="max-w-[1160px] mx-auto flex flex-col md:flex-row gap-10 items-center">
-      <div className="w-full md:w-[42%]">
-        <img src="https://placehold.co/480x520/155c3f/c8923a?text=Equipe" alt="Donos da QualiSports"
-          className="w-full rounded-[20px] object-cover" loading="lazy" />
-        <div className="text-center mt-4">
-          <span className="qs-badge" style={{ boxShadow: "0 8px 24px var(--qs-gold-glow)" }}>
-            Nossa missão: aprimorar sua saúde
-          </span>
-        </div>
+    <div className="max-w-[800px] mx-auto">
+      <div className="text-center mb-8">
+        <span className="qs-badge" style={{ boxShadow: "0 8px 24px var(--qs-gold-glow)" }}>
+          Nossa missão: aprimorar sua saúde
+        </span>
       </div>
-      <div className="flex-1">
+      <div>
         <p className="qs-section-label">Quem Somos</p>
         <h2 className="qs-heading text-[28px] md:text-[36px] lg:text-[42px] text-white mb-4">
           A clínica que trata você<br/>como <em>pessoa</em>, não protocolo
