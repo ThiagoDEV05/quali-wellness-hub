@@ -404,7 +404,7 @@ const Index = () => {
         objectionText="Pilates sem acompanhamento fisioterapêutico individualizado raramente resolve problemas clínicos. A diferença está em quem conduz e em como é prescrito para o seu caso."
         tags={["Individual", "Pequenos Grupos", "Clínico", "Reabilitação"]}
         ctaText="Quero Fazer Pilates Clínico"
-        imgPlaceholder="Pilates"
+        imgSrc={pilatesImg}
       />
 
       <Process />
