@@ -1,5 +1,6 @@
 import { useState } from "react";
 import equipeImg from "@/assets/equipe-qualisports.jpg";
+import fisioterapiaImg from "@/assets/fisioterapia.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useCountUp } from "@/hooks/useCountUp";
 import { GoldCTA, FloatingWhatsApp } from "@/components/WhatsApp";
@@ -144,18 +145,19 @@ interface ServiceProps {
   objectionText: string;
   tags: string[];
   ctaText: string;
-  imgPlaceholder: string;
+  imgSrc?: string;
+  imgPlaceholder?: string;
   reversed?: boolean;
   bg: string;
 }
 
-const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objectionTitle, objectionText, tags, ctaText, imgPlaceholder, reversed, bg }: ServiceProps) => (
+const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objectionTitle, objectionText, tags, ctaText, imgSrc, imgPlaceholder, reversed, bg }: ServiceProps) => (
   <section className="py-14 md:py-20 px-4" style={{ background: bg }}>
     <div className={`max-w-[1160px] mx-auto flex flex-col ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} gap-10 items-center`}>
       {/* Image side */}
       <div className="w-full md:w-[42%]">
         <span className="qs-badge mb-4">{badgeEmoji} {badge}</span>
-        <img src={`https://placehold.co/480x380/155c3f/c8923a?text=${imgPlaceholder}`} alt={badge}
+        <img src={imgSrc || `https://placehold.co/480x380/155c3f/c8923a?text=${imgPlaceholder}`} alt={badge}
           className="w-full rounded-[20px] object-cover" loading="lazy" />
       </div>
       {/* Text side */}
@@ -346,7 +348,7 @@ const Index = () => {
         objectionText="Tratamentos genéricos raramente funcionam. Aqui, seu caso é avaliado individualmente — com histórico, exames e teste funcional. O plano é feito para você, não para uma lesão abstrata."
         tags={["LCA", "Coluna", "Ombro", "Joelho", "Tornozelo", "Quadril", "Pós-operatório"]}
         ctaText="Quero Tratar Minha Lesão"
-        imgPlaceholder="Fisioterapia"
+        imgSrc={fisioterapiaImg}
       />
 
       <ServiceBlock
