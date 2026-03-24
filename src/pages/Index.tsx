@@ -14,7 +14,7 @@ const Hero = () => (
     <div className="max-w-[1160px] mx-auto flex flex-col md:flex-row gap-10 md:gap-12 items-center">
       {/* Text */}
       <div className="flex-1 order-2 md:order-1">
-        <p className="qs-section-label">Clínica Especializada em São Luís – MA</p>
+        <p className="qs-section-label text-[10px] tracking-[1.5px]">Clínica Especializada em São Luís – MA</p>
         <h1 className="qs-heading text-[32px] md:text-[48px] lg:text-[56px] text-white mb-5">
           Você não precisa<br/>aprender a viver<br/>com a <em>dor.</em>
         </h1>
