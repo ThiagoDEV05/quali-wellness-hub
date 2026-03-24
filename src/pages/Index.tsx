@@ -155,7 +155,7 @@ interface ServiceProps {
   bg: string;
 }
 
-const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objectionTitle, objectionText, tags, ctaText, imgSrc, imgPlaceholder, reversed, bg }: ServiceProps) => (
+const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objectionTitle, objectionText, tags, ctaText, waMessage, imgSrc, imgPlaceholder, reversed, bg }: ServiceProps) => (
   <section className="py-14 md:py-20 px-4" style={{ background: bg }}>
     <div className={`max-w-[1160px] mx-auto flex flex-col ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} gap-10 items-center`}>
       {/* Image side */}
