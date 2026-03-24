@@ -366,7 +366,7 @@ const Index = () => {
         objectionText="Não precisa ser. Qualquer pessoa que se exercita regularmente tem demanda muscular que se beneficia de recuperação dirigida. Melhor rendimento, menos lesão — independente do nível."
         tags={["Recuperação Muscular", "Alto Rendimento", "Prevenção", "Performance"]}
         ctaText="Quero Recuperar Melhor"
-        imgPlaceholder="Recovery"
+        imgSrc={recoveryImg}
       />
 
       <ServiceBlock
