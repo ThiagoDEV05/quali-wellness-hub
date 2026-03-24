@@ -39,7 +39,7 @@ const Hero = () => (
           ))}
         </div>
 
-        <GoldCTA text="Quero Minha Avaliação Gratuita" />
+        <GoldCTA text="Quero Minha Avaliação Gratuita" message="Olá! Vim pelo site e gostaria de agendar minha avaliação gratuita na QualiSports." />
 
         <div className="flex gap-5 flex-wrap pt-5 mt-5 text-xs font-semibold" style={{ borderTop: "1px solid var(--qs-border-subtle)", color: "var(--qs-text-muted)" }}>
           <span>✓ Sem fila de espera</span>
