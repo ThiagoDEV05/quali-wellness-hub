@@ -215,7 +215,7 @@ const Process = () => (
         ))}
       </div>
       <div className="text-center">
-        <GoldCTA text="Começar Agora — É Gratuito" />
+        <GoldCTA text="Começar Agora — É Gratuito" message="Olá! Vim pelo site e quero começar meu tratamento na QualiSports. Como faço para agendar?" />
       </div>
     </div>
   </section>
