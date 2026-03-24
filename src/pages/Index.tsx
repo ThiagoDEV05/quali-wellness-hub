@@ -168,7 +168,7 @@ interface ServiceProps {
 
 const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objectionTitle, objectionText, tags, ctaText, waMessage, imgSrc, imgPlaceholder, reversed, bg }: ServiceProps) => (
   <section className="py-14 md:py-20 px-4" style={{ background: bg }}>
-    <div className={`max-w-[1160px] mx-auto flex flex-col ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} gap-10 items-center`}>
+    <div className={`max-w-[1160px] mx-auto flex flex-col ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} gap-10 items-start md:items-center`}>
       {/* Image side */}
       <div className="w-full md:w-[42%]">
         <span className="qs-badge mb-4">{badgeEmoji} {badge}</span>
@@ -176,7 +176,7 @@ const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objecti
           className="w-full rounded-[20px] object-cover" loading="lazy" />
       </div>
       {/* Text side */}
-      <div className="flex-1">
+      <div className="flex-1 w-full">
         <p className="qs-section-label">Especialidade {number}</p>
         <h3 className="qs-heading text-[24px] md:text-[30px] lg:text-[34px] text-white mb-3.5">{title}</h3>
         <p className="qs-body mb-5">{desc}</p>
