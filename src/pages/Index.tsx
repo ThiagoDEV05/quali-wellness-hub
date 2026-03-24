@@ -2,6 +2,7 @@ import { useState } from "react";
 import equipeImg from "@/assets/equipe-qualisports.jpg";
 import fisioterapiaImg from "@/assets/fisioterapia.jpg";
 import recoveryImg from "@/assets/recovery.jpg";
+import pelvicaImg from "@/assets/fisio-pelvica.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useCountUp } from "@/hooks/useCountUp";
 import { GoldCTA, FloatingWhatsApp } from "@/components/WhatsApp";
@@ -385,7 +386,7 @@ const Index = () => {
         objectionText="Nossa equipe é treinada exatamente para isso. Você não precisa explicar nada por escrito antes — é só marcar, vir e conversar pessoalmente em ambiente totalmente reservado."
         tags={[]}
         ctaText="Quero Saber Mais (100% Sigiloso)"
-        imgPlaceholder="Fisio+Pélvica"
+        imgSrc={pelvicaImg}
       />
 
       <ServiceBlock
