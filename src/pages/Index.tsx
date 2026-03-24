@@ -182,7 +182,7 @@ const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objecti
         <div className="flex flex-wrap gap-1.5 mb-6">
           {tags.map(t => <span key={t} className="qs-tag">{t}</span>)}
         </div>
-        <GoldCTA text={ctaText} />
+        <GoldCTA text={ctaText} message={waMessage} />
       </div>
     </div>
   </section>
