@@ -52,10 +52,21 @@ const Hero = () => (
       <div className="flex-shrink-0 w-full md:w-[42%] order-1 md:order-2">
         <img src={equipeImg} alt="Equipe QualiSports"
           className="w-full rounded-[20px] object-cover" loading="lazy" />
-        <div className="flex gap-2 flex-wrap justify-center mt-3">
-          {["Fisioterapia", "Recovery", "Fisio Pélvica", "Pilates"].map(t => (
-            <span key={t} className="qs-tag">{t}</span>
-          ))}
+        
+        {/* Marquee tags */}
+        <div className="overflow-hidden mt-3">
+          <div className="flex gap-3 animate-marquee whitespace-nowrap">
+            {[...Array(3)].flatMap((_, i) =>
+              ["Fisioterapia", "Recovery", "Fisio Pélvica", "Pilates"].map(t => (
+                <span key={`${t}-${i}`} className="qs-tag shrink-0">{t}</span>
+              ))
+            )}
+          </div>
+        </div>
+
+        {/* CTA mobile na primeira dobra */}
+        <div className="mt-5 md:hidden text-center">
+          <GoldCTA text="Agendar Avaliação Gratuita" message="Olá! Vim pelo site e gostaria de agendar minha avaliação gratuita na QualiSports." />
         </div>
       </div>
     </div>
