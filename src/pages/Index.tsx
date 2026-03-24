@@ -1,5 +1,6 @@
 import { useState } from "react";
 import equipeImg from "@/assets/equipe-qualisports.jpg";
+import fisioterapiaImg from "@/assets/fisioterapia.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useCountUp } from "@/hooks/useCountUp";
 import { GoldCTA, FloatingWhatsApp } from "@/components/WhatsApp";
