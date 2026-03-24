@@ -68,7 +68,7 @@ const Strip = () => (
   <section className="py-8 px-4" style={{ background: "var(--qs-strip)" }}>
     <div className="max-w-[1160px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0">
       {items.map((it, i) => (
-        <div key={i} className="text-center px-2 md:px-6" style={i < items.length - 1 ? { borderRight: window.innerWidth >= 768 ? "1px solid var(--qs-border-subtle)" : "none" } : {}}>
+        <div key={i} className={`text-center px-2 md:px-6 ${i < items.length - 1 ? 'md:border-r md:border-white/[0.07]' : ''}`}>
           <div className="text-2xl mb-2">{it.icon}</div>
           <strong className="block text-sm font-extrabold mb-1">{it.title}</strong>
           <span className="text-xs leading-snug" style={{ color: "var(--qs-text-muted)" }}>{it.desc}</span>
