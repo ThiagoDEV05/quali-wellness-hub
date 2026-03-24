@@ -3,6 +3,7 @@ import equipeImg from "@/assets/equipe-qualisports.jpg";
 import fisioterapiaImg from "@/assets/fisioterapia.jpg";
 import recoveryImg from "@/assets/recovery.jpg";
 import pelvicaImg from "@/assets/fisio-pelvica.jpg";
+import pilatesImg from "@/assets/pilates.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useCountUp } from "@/hooks/useCountUp";
 import { GoldCTA, FloatingWhatsApp } from "@/components/WhatsApp";
