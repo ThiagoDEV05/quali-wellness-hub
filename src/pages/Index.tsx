@@ -348,7 +348,7 @@ const Index = () => {
         objectionText="Tratamentos genéricos raramente funcionam. Aqui, seu caso é avaliado individualmente — com histórico, exames e teste funcional. O plano é feito para você, não para uma lesão abstrata."
         tags={["LCA", "Coluna", "Ombro", "Joelho", "Tornozelo", "Quadril", "Pós-operatório"]}
         ctaText="Quero Tratar Minha Lesão"
-        imgPlaceholder="Fisioterapia"
+        imgSrc={fisioterapiaImg}
       />
 
       <ServiceBlock
