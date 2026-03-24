@@ -5,7 +5,7 @@ export function useScrollReveal() {
 
   const observe = useCallback(() => {
     if (!ref.current) return;
-    const elements = ref.current.querySelectorAll('.scroll-reveal, .scroll-reveal-left');
+    const elements = ref.current.querySelectorAll('.scroll-reveal');
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -15,15 +15,15 @@ export function useScrollReveal() {
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
     elements.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
-    const cleanup = observe();
-    return cleanup;
+    const timeout = setTimeout(() => observe(), 100);
+    return () => clearTimeout(timeout);
   }, [observe]);
 
   return ref;
