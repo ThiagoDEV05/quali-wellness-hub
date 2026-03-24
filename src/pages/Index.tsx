@@ -187,10 +187,10 @@ const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objecti
             </li>
           ))}
         </ul>
-        <div className="qs-objection">
+        <div className="qs-objection mb-4">
           <strong>{objectionTitle}</strong><br/>{objectionText}
         </div>
-        <div className="overflow-hidden mb-6">
+        <div className="overflow-hidden mb-5">
           <div className="flex gap-2 animate-marquee whitespace-nowrap">
             {[...Array(3)].flatMap((_, i) =>
               tags.map(t => <span key={`${t}-${i}`} className="qs-tag shrink-0">{t}</span>)
