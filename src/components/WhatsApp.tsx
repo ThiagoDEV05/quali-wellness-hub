@@ -1,4 +1,9 @@
-const WA_LINK = "https://wa.me/5598XXXXXXXXX?text=Olá!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avaliação";
+const WA_NUMBER = "5598988946212";
+
+export const waLink = (message: string) =>
+  `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
+
+const WA_LINK_DEFAULT = waLink("Olá! Vim pelo site e quero agendar uma avaliação gratuita.");
 
 export const WhatsAppIcon = ({ size = 20 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
@@ -6,15 +11,15 @@ export const WhatsAppIcon = ({ size = 20 }: { size?: number }) => (
   </svg>
 );
 
-export const GoldCTA = ({ text, className = "" }: { text: string; className?: string }) => (
-  <a href={WA_LINK} target="_blank" rel="noopener noreferrer"
+export const GoldCTA = ({ text, message, className = "" }: { text: string; message?: string; className?: string }) => (
+  <a href={message ? waLink(message) : WA_LINK_DEFAULT} target="_blank" rel="noopener noreferrer"
     className={`qs-btn-gold ${className}`}>
     📱 {text}
   </a>
 );
 
 export const FloatingWhatsApp = () => (
-  <a href={WA_LINK} target="_blank" rel="noopener noreferrer"
+  <a href={WA_LINK_DEFAULT} target="_blank" rel="noopener noreferrer"
     className="fixed bottom-5 right-5 z-[9999] w-[56px] h-[56px] rounded-full flex items-center justify-center shadow-lg group"
     style={{ background: "#25D366", animation: "pulse-wa 2s cubic-bezier(0.4,0,0.6,1) infinite" }}
     aria-label="WhatsApp">
@@ -26,4 +31,4 @@ export const FloatingWhatsApp = () => (
   </a>
 );
 
-export default WA_LINK;
+export default WA_LINK_DEFAULT;

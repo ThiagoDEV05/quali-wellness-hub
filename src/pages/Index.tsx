@@ -39,7 +39,7 @@ const Hero = () => (
           ))}
         </div>
 
-        <GoldCTA text="Quero Minha Avaliação Gratuita" />
+        <GoldCTA text="Quero Minha Avaliação Gratuita" message="Olá! Vim pelo site e gostaria de agendar minha avaliação gratuita na QualiSports." />
 
         <div className="flex gap-5 flex-wrap pt-5 mt-5 text-xs font-semibold" style={{ borderTop: "1px solid var(--qs-border-subtle)", color: "var(--qs-text-muted)" }}>
           <span>✓ Sem fila de espera</span>
@@ -148,13 +148,14 @@ interface ServiceProps {
   objectionText: string;
   tags: string[];
   ctaText: string;
+  waMessage: string;
   imgSrc?: string;
   imgPlaceholder?: string;
   reversed?: boolean;
   bg: string;
 }
 
-const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objectionTitle, objectionText, tags, ctaText, imgSrc, imgPlaceholder, reversed, bg }: ServiceProps) => (
+const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objectionTitle, objectionText, tags, ctaText, waMessage, imgSrc, imgPlaceholder, reversed, bg }: ServiceProps) => (
   <section className="py-14 md:py-20 px-4" style={{ background: bg }}>
     <div className={`max-w-[1160px] mx-auto flex flex-col ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} gap-10 items-center`}>
       {/* Image side */}
@@ -181,7 +182,7 @@ const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objecti
         <div className="flex flex-wrap gap-1.5 mb-6">
           {tags.map(t => <span key={t} className="qs-tag">{t}</span>)}
         </div>
-        <GoldCTA text={ctaText} />
+        <GoldCTA text={ctaText} message={waMessage} />
       </div>
     </div>
   </section>
@@ -214,7 +215,7 @@ const Process = () => (
         ))}
       </div>
       <div className="text-center">
-        <GoldCTA text="Começar Agora — É Gratuito" />
+        <GoldCTA text="Começar Agora — É Gratuito" message="Olá! Vim pelo site e quero começar meu tratamento na QualiSports. Como faço para agendar?" />
       </div>
     </div>
   </section>
@@ -306,7 +307,7 @@ const FinalCTA = () => (
       <p className="text-[15px] leading-[1.75] mb-9 max-w-[640px] mx-auto" style={{ color: "var(--qs-text-muted)" }}>
         Agende sua avaliação gratuita agora. Sem compromisso, sem burocracia — uma conversa honesta sobre o que você tem e o que podemos fazer juntos. Se não pudermos te ajudar, te dizemos isso na primeira consulta.
       </p>
-      <GoldCTA text="Agendar Avaliação Gratuita" />
+      <GoldCTA text="Agendar Avaliação Gratuita" message="Olá! Vim pelo site e quero agendar minha avaliação gratuita. Podem me ajudar?" />
       <div className="flex justify-center gap-5 flex-wrap mt-6 text-xs font-semibold" style={{ color: "rgba(184,212,196,0.45)" }}>
         <span>✓ Avaliação 100% gratuita</span>
         <span>✓ Sem encaminhamento</span>
@@ -351,6 +352,7 @@ const Index = () => {
         objectionText="Tratamentos genéricos raramente funcionam. Aqui, seu caso é avaliado individualmente — com histórico, exames e teste funcional. O plano é feito para você, não para uma lesão abstrata."
         tags={["LCA", "Coluna", "Ombro", "Joelho", "Tornozelo", "Quadril", "Pós-operatório"]}
         ctaText="Quero Tratar Minha Lesão"
+        waMessage="Olá! Vim pelo site e tenho interesse no serviço de Fisioterapia Esportiva. Gostaria de agendar uma avaliação."
         imgSrc={fisioterapiaImg}
       />
 
@@ -368,6 +370,7 @@ const Index = () => {
         objectionText="Não precisa ser. Qualquer pessoa que se exercita regularmente tem demanda muscular que se beneficia de recuperação dirigida. Melhor rendimento, menos lesão — independente do nível."
         tags={["Recuperação Muscular", "Alto Rendimento", "Prevenção", "Performance"]}
         ctaText="Quero Recuperar Melhor"
+        waMessage="Olá! Vim pelo site e tenho interesse no serviço de Recovery. Gostaria de saber mais."
         imgSrc={recoveryImg}
       />
 
@@ -387,6 +390,7 @@ const Index = () => {
         objectionText="Nossa equipe é treinada exatamente para isso. Você não precisa explicar nada por escrito antes — é só marcar, vir e conversar pessoalmente em ambiente totalmente reservado."
         tags={[]}
         ctaText="Quero Saber Mais (100% Sigiloso)"
+        waMessage="Olá! Vim pelo site e tenho interesse no serviço de Fisioterapia Pélvica. Gostaria de mais informações."
         imgSrc={pelvicaImg}
       />
 
@@ -404,6 +408,7 @@ const Index = () => {
         objectionText="Pilates sem acompanhamento fisioterapêutico individualizado raramente resolve problemas clínicos. A diferença está em quem conduz e em como é prescrito para o seu caso."
         tags={["Individual", "Pequenos Grupos", "Clínico", "Reabilitação"]}
         ctaText="Quero Fazer Pilates Clínico"
+        waMessage="Olá! Vim pelo site e tenho interesse no Pilates Clínico. Gostaria de agendar uma avaliação."
         imgSrc={pilatesImg}
       />
 
