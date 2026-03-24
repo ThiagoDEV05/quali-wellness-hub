@@ -199,7 +199,9 @@ const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objecti
             )}
           </div>
         </div>
-        <GoldCTA text={ctaText} message={waMessage} />
+        <div className="text-center">
+          <GoldCTA text={ctaText} message={waMessage} />
+        </div>
       </div>
     </div>
   </section>
