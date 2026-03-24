@@ -307,7 +307,7 @@ const FinalCTA = () => (
       <p className="text-[15px] leading-[1.75] mb-9 max-w-[640px] mx-auto" style={{ color: "var(--qs-text-muted)" }}>
         Agende sua avaliação gratuita agora. Sem compromisso, sem burocracia — uma conversa honesta sobre o que você tem e o que podemos fazer juntos. Se não pudermos te ajudar, te dizemos isso na primeira consulta.
       </p>
-      <GoldCTA text="Agendar Avaliação Gratuita" />
+      <GoldCTA text="Agendar Avaliação Gratuita" message="Olá! Vim pelo site e quero agendar minha avaliação gratuita. Podem me ajudar?" />
       <div className="flex justify-center gap-5 flex-wrap mt-6 text-xs font-semibold" style={{ color: "rgba(184,212,196,0.45)" }}>
         <span>✓ Avaliação 100% gratuita</span>
         <span>✓ Sem encaminhamento</span>
