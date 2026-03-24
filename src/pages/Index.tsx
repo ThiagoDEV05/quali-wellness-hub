@@ -190,8 +190,12 @@ const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objecti
         <div className="qs-objection">
           <strong>{objectionTitle}</strong><br/>{objectionText}
         </div>
-        <div className="flex flex-wrap gap-1.5 mb-6">
-          {tags.map(t => <span key={t} className="qs-tag">{t}</span>)}
+        <div className="overflow-hidden mb-6">
+          <div className="flex gap-2 animate-marquee whitespace-nowrap">
+            {[...Array(3)].flatMap((_, i) =>
+              tags.map(t => <span key={`${t}-${i}`} className="qs-tag shrink-0">{t}</span>)
+            )}
+          </div>
         </div>
         <GoldCTA text={ctaText} message={waMessage} />
       </div>
