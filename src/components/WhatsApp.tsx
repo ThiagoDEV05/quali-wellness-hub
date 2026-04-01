@@ -26,17 +26,21 @@ export const WhatsAppIcon = ({ size = 20 }: { size?: number }) => (
   </svg>
 );
 
-export const GoldCTA = ({ text, message, className = "" }: { text: string; message?: string; className?: string }) => (
-  
-    href={message ? waLink(message) : WA_LINK_DEFAULT}
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`qs-btn-gold ${className}`}
-    onClick={() => pushLeadWhatsapp("cta_button")}
-  >
-    📱 {text}
-  </a>
-);
+export const GoldCTA = ({ text, message, className = "" }: { text: string; message?: string; className?: string }) => {
+  const href = message ? waLink(message) : WA_LINK_DEFAULT;
+
+  return (
+    
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`qs-btn-gold ${className}`}
+      onClick={() => pushLeadWhatsapp("cta_button")}
+    >
+      📱 {text}
+    </a>
+  );
+};
 
 export const FloatingWhatsApp = () => (
   
