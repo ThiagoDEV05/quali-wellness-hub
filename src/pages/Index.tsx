@@ -77,15 +77,12 @@ const Hero = () => (
 
 /* ─── STRIP ─── */
 const items = [
-  { icon: "🎯", title: "Avaliação gratuita", desc: "Sem custo, sem compromisso. Você entende o que tem antes de decidir." },
-  { icon: "📍", title: "Sem encaminhamento", desc: "Pode agendar direto, sem precisar de médico." },
   { icon: "⏱", title: "Horários flexíveis", desc: "Atendimento manhã e tarde para não prejudicar seu trabalho." },
   { icon: "💬", title: "Resposta imediata", desc: "Agende pelo WhatsApp agora. Em minutos tem seu horário." },
 ];
 const Strip = () => (
   <section className="py-8 px-4" style={{ background: "var(--qs-strip)" }}>
-    <div className="max-w-[1160px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0">
-      {items.map((it, i) => (
+<div className="max-w-[1160px] mx-auto grid grid-cols-2 gap-6 md:gap-0">      {items.map((it, i) => (
         <div key={i} className={`text-center px-2 md:px-6 ${i < items.length - 1 ? 'md:border-r md:border-white/[0.07]' : ''}`}>
           <div className="text-2xl mb-2">{it.icon}</div>
           <strong className="block text-sm font-extrabold mb-1">{it.title}</strong>
