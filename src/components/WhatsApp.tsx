@@ -22,16 +22,17 @@ export const WhatsAppIcon = ({ size = 20 }: { size?: number }) => (
   </svg>
 );
 
-export const GoldCTA = ({ text, message, className = "" }: { text: string; message?: string; className?: string }) => (
-  
-    href={message ? waLink(message) : WA_LINK_DEFAULT}
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`qs-btn-gold ${className}`}
-    onClick={() => pushLeadWhatsapp("cta_button")}
-  >
-    📱 {text}
-  </a>
+25  export const GoldCTA = ({ text, message, className = "" }: { text: string; message?: string; className?: string }) => (
+26    
+27      href={message ? waLink(message) : WA_LINK_DEFAULT}
+28      target="_blank"
+29      rel="noopener noreferrer"
+30      className={`qs-btn-gold ${className}`}
+31      onClick={() => pushLeadWhatsapp("cta_button")}
+32    >
+33      📱 {text}
+34    </a>
+35  );
 );
 );
 
