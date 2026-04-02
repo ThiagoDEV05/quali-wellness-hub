@@ -22,39 +22,8 @@ export const WhatsAppIcon = ({ size = 20 }: { size?: number }) => (
   </svg>
 );
 
-export const GoldCTA = ({ text, message, className = "" }: { text: string; message?: string; className?: string }) => (
-  
-    href={message ? waLink(message) : WA_LINK_DEFAULT}
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`qs-btn-gold ${className}`}
-    onClick={() => pushLeadWhatsapp("cta_button")}
-  >
-    📱 {text}
-  </a>
-);
-35  );
-);
-);
+export const GoldCTA = ({ text, message, className = "" }: { text: string; message?: string; className?: string }) => (<a href={message ? waLink(message) : WA_LINK_DEFAULT} target="_blank" rel="noopener noreferrer" className={`qs-btn-gold ${className}`} onClick={() => pushLeadWhatsapp("cta_button")}>📱 {text}</a>);
 
-export const FloatingWhatsApp = () => (
-  
-    href={WA_LINK_DEFAULT}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="fixed bottom-5 right-5 z-[9999] w-[56px] h-[56px] rounded-full flex items-center justify-center shadow-lg group"
-    style={{ background: "#25D366", animation: "pulse-wa 2s cubic-bezier(0.4,0,0.6,1) infinite" }}
-    aria-label="WhatsApp"
-    onClick={() => pushLeadWhatsapp("floating_button")}
-  >
-    <WhatsAppIcon size={26} />
-    <span
-      className="absolute right-[64px] text-sm px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none"
-      style={{ background: "var(--qs-darkest)", color: "#fff" }}
-    >
-      Fale conosco
-    </span>
-  </a>
-);
+export const FloatingWhatsApp = () => (<a href={WA_LINK_DEFAULT} target="_blank" rel="noopener noreferrer" className="fixed bottom-5 right-5 z-[9999] w-[56px] h-[56px] rounded-full flex items-center justify-center shadow-lg group" style={{ background: "#25D366", animation: "pulse-wa 2s cubic-bezier(0.4,0,0.6,1) infinite" }} aria-label="WhatsApp" onClick={() => pushLeadWhatsapp("floating_button")}><WhatsAppIcon size={26} /><span className="absolute right-[64px] text-sm px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none" style={{ background: "var(--qs-darkest)", color: "#fff" }}>Fale conosco</span></a>);
 
 export default WA_LINK_DEFAULT;
