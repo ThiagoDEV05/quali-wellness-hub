@@ -33,6 +33,7 @@ export const GoldCTA = ({ text, message, className = "" }: { text: string; messa
     📱 {text}
   </a>
 );
+);
 
 export const FloatingWhatsApp = () => (
   
