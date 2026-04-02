@@ -26,8 +26,8 @@ const Hero = () => (
         <div className="flex flex-col gap-2.5 mb-7">
           {[
             { icon: "🏆", text: "Atendimento especializado do amador ao atleta profissional" },
-            { icon: "📋", text: "Avaliação gratuita antes de qualquer compromisso" },
-            { icon: "⚡", text: "Protocolos baseados em evidência — não em achismo" },
+{ icon: "📋", text: "Agende sua consulta — sem qualquer compromisso" },
+    { icon: "⚡", text: "Protocolos baseados em evidência — não em achismo" },
           ].map((p) => (
             <div key={p.text} className="flex items-center gap-3 text-sm font-semibold" style={{ color: "var(--qs-text-light)" }}>
               <span className="w-8 h-8 rounded-[9px] flex items-center justify-center shrink-0 text-base"
@@ -40,7 +40,7 @@ const Hero = () => (
         </div>
 
         <div className="text-center">
-          <GoldCTA text="Quero Minha Avaliação Gratuita" message="Olá! Vim pelo site e gostaria de agendar minha avaliação gratuita na QualiSports." />
+<GoldCTA text="Quero Agendar Minha Consulta" message="Olá! Vim pelo site e gostaria de agendar minha consulta na QualiSports." />
         </div>
 
         <div className="flex gap-5 flex-wrap pt-5 mt-5 text-xs font-semibold" style={{ borderTop: "1px solid var(--qs-border-subtle)", color: "var(--qs-text-muted)" }}>
@@ -68,7 +68,7 @@ const Hero = () => (
 
         {/* CTA mobile na primeira dobra */}
         <div className="mt-5 md:hidden text-center">
-          <GoldCTA text="Agendar Avaliação Gratuita" message="Olá! Vim pelo site e gostaria de agendar minha avaliação gratuita na QualiSports." />
+<GoldCTA text="Agendar Minha Consulta" message="Olá! Vim pelo site e gostaria de agendar minha consulta na QualiSports." />
         </div>
       </div>
     </div>
@@ -207,7 +207,7 @@ const ServiceBlock = ({ number, badge, badgeEmoji, title, desc, bullets, objecti
 /* ─── PROCESS ─── */
 const steps = [
   { num: "1", title: "Agende pelo WhatsApp", desc: "Sem burocracia. Em minutos seu horário está marcado." },
-  { num: "2", title: "Avaliação gratuita", desc: "Consulta completa: histórico, exame físico e diagnóstico funcional." },
+{ num: "2", title: "Consulta", desc: "Consulta completa: histórico, exame físico e diagnóstico funcional." },
   { num: "3", title: "Plano personalizado", desc: "Protocolo específico com metas e prazo estimado para o seu caso." },
   { num: "4", title: "Evolução real", desc: "Cada sessão tem progresso mensurável. Você vê a melhora acontecer." },
 ];
@@ -231,7 +231,7 @@ const Process = () => (
         ))}
       </div>
       <div className="text-center">
-        <GoldCTA text="Começar Agora — É Gratuito" message="Olá! Vim pelo site e quero começar meu tratamento na QualiSports. Como faço para agendar?" />
+<GoldCTA text="Começar Agora" message="Olá! Vim pelo site e quero começar meu tratamento na QualiSports. Como faço para agendar?" />
       </div>
     </div>
   </section>
@@ -244,7 +244,7 @@ const faqs = [
   { q: "Fisioterapia dói? Tenho medo de piorar.", a: "Fisioterapia bem feita não deveria causar dor desnecessária. Alguns processos envolvem desconforto pontual — e sempre comunicado antes. Piorar por fisioterapia acontece quando o tratamento é inadequado para o caso, não quando é prescrito corretamente." },
   { q: "Posso fazer fisioterapia mesmo sem exame?", a: "Sim. O fisioterapeuta realiza avaliação clínica e funcional que, na maioria dos casos, é suficiente para início do tratamento. Se você tiver exames, ótimo. Se não tiver, não é impedimento." },
   { q: "Fisioterapia pélvica é só para mulheres?", a: "Não. Homens também têm assoalho pélvico e também sofrem de disfunções que têm tratamento — incontinência, dor pélvica, pós-operatório de próstata. A especialidade é para qualquer pessoa." },
-  { q: "E se eu tiver com dor há muito tempo e nada adiantou?", a: "Dor crônica que não responde a tratamento geralmente tem uma causa que ainda não foi abordada corretamente. Nossa avaliação é justamente para encontrar essa causa — não para repetir o que já foi tentado. Agende a avaliação gratuita e veja se conseguimos te ajudar." },
+{ q: "E se eu tiver com dor há muito tempo e nada adiantou?", a: "Dor crônica que não responde a tratamento geralmente tem uma causa que ainda não foi abordada corretamente. Nossa consulta é justamente para encontrar essa causa — não para repetir o que já foi tentado. Agende sua consulta e veja se conseguimos te ajudar." },
 ];
 
 const FAQItem = ({ q, a }: { q: string; a: string }) => {
@@ -321,11 +321,11 @@ const FinalCTA = () => (
         Chega de conviver<br/>com o que tem <em>tratamento.</em>
       </h2>
       <p className="text-[15px] leading-[1.75] mb-9 max-w-[640px] mx-auto" style={{ color: "var(--qs-text-muted)" }}>
-        Agende sua avaliação gratuita agora. Sem compromisso, sem burocracia — uma conversa honesta sobre o que você tem e o que podemos fazer juntos. Se não pudermos te ajudar, te dizemos isso na primeira consulta.
+Agende sua consulta agora. Sem compromisso, sem burocracia — uma conversa honesta sobre o que você tem e o que podemos fazer juntos. Se não pudermos te ajudar, te dizemos isso na primeira consulta.
       </p>
-      <GoldCTA text="Agendar Avaliação Gratuita" message="Olá! Vim pelo site e quero agendar minha avaliação gratuita. Podem me ajudar?" />
+<GoldCTA text="Agendar Minha Consulta" message="Olá! Vim pelo site e quero agendar minha consulta. Podem me ajudar?" />
       <div className="flex justify-center gap-5 flex-wrap mt-6 text-xs font-semibold" style={{ color: "rgba(184,212,196,0.45)" }}>
-        <span>✓ Avaliação 100% gratuita</span>
+<span>✓ Consulta sem compromisso</span>
         <span>✓ Sem encaminhamento</span>
         <span>✓ Resposta rápida</span>
         <span>✓ Sem fila</span>
