@@ -1,8 +1,7 @@
 const WA_NUMBER = "5598988946212";
 
 export const waLink = (message: string) =>
-  https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}; // <-- Crases adicionadas aqui!
-
+const WA_LINK_DEFAULT = waLink("Olá! Vim pelo site e quero agendar minha consulta.");
 const WA_LINK_DEFAULT = waLink("Olá! Vim pelo site e quero agendar uma avaliação gratuita.");
 // Tipagem para o dataLayer do GTM
 declare global {
